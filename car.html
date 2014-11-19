@@ -1,0 +1,580 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Hotelio/Search</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+	<link rel="stylesheet" href="css/vendor/normalize.css">
+	<link rel="stylesheet" href="css/vendor/foundation.min.css">
+	<link rel="stylesheet" href="css/vendor/jquery-ui/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/landing_page.css">
+	<link rel="stylesheet" href="css/search.css">
+
+	<script src="js/vendor/modernizr.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- start:navbar -->
+	<div id='top-bar'>
+		<div class='wrapper'>
+			<a href="#" class="left"><img src="img/logo.png" alt="Hotelio logo"/></a>
+
+
+			<ul id="primary-links" class="left links-section">
+				<li class='flights'>
+					<a href="#">Flights</a>
+				</li>
+				<li class='hotels'>
+					<a href="#">Hotels</a>
+				</li>
+				<li class='flight_and_hotel'>
+					<a href='#'>Flight+Hotel</a>
+				</li>
+				<li class='transfers'>
+					<a href='#'>Transfers</a>
+				</li>
+				<li class='autos'>
+					<a href='#'>Autos</a>
+				</li>
+				<li class='more has-dropdown'>
+					<div class='dropdown-menu'>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element flight-and-auto'>
+									Flights &amp; Auto
+									<p>Get great deals on flight and car rental packages.Get the most from your holiday.</p>
+								</a>
+							</div>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element tickets'>
+									Tickets
+									<p>Spice up your trips with local attractions. Let the fun begin!</p>
+								</a>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element international-flights'>
+									International Flights
+									<p>Book International flights with lowest rates available across.</p>
+								</a>
+							</div>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element offers-and-promotions'>
+									Offers &amp; Promotions
+									<p>Check out the BEST offers and promotions while you book your trips.</p>
+								</a>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element weekend-gateways'>
+									Weekend Gateways
+									<p>Go on for a quick break in the upcoming weekends.</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul id='secondary-links' class='right'>
+				<li class='with-icon print-ticket'><a href="#">Print Ticket</a></li>
+				<li class='with-icon customer-support'><a href="#">24x7 Customer Support</a></li>
+				<li><a href="#" data-reveal-id="sign-in-modal">Sign In</a></li>
+				<li><a href="#" data-reveal-id="sign-up-modal">Sign Up</a></li>
+				<li class='with-icon user hide'><a href="#">Ismael</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- end:navbar -->
+
+	<!-- start:content -->
+	<div class='content' id="car-page">
+		<div id="flight-search-line">
+			<div class="row search-line-wrapper">
+				<div class="search-loc">
+					<label class="">Pickup Location
+						<input type="text">
+					</label>
+					<label class="end">Return Location
+						<input type="text">
+					</label>
+				</div>
+				<div id="" class='car-date-select'>
+					<div class='date-layer'>
+						<div class="horiz-date-wrap">
+							<span class='calendar-icon'></span>
+							<span class='date-st'>From</span><input type="text" id="pick-date2" placeholder="Oct 02, 2014">
+						</div>
+						<label class="time-select">
+							<select>
+								<option>00:00</option>
+								<option>01:00</option>
+								<option>02:00</option>
+								<option>03:00</option>
+								<option>04:00</option>
+								<option>05:00</option>
+								<option>06:00</option>
+								<option>07:00</option>
+								<option>08:00</option>
+								<option>09:00</option>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+								<option>16:00</option>
+								<option>17:00</option>
+								<option>18:00</option>
+								<option>19:00</option>
+								<option>20:00</option>
+								<option>21:00</option>
+								<option>22:00</option>
+								<option>23:00</option>
+							</select>
+						</label>
+					</div>
+					<div class='date-layer end'>
+						<div class="horiz-date-wrap">
+							<span class='calendar-icon'></span>
+							<span class='date-st'>To</span><input type="text" id="return-date2" placeholder="Oct 02, 2014">
+						</div>
+						<label class="time-select">
+							<select>
+								<option>00:00</option>
+								<option>01:00</option>
+								<option>02:00</option>
+								<option>03:00</option>
+								<option>04:00</option>
+								<option>05:00</option>
+								<option>06:00</option>
+								<option>07:00</option>
+								<option>08:00</option>
+								<option>09:00</option>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+								<option>16:00</option>
+								<option>17:00</option>
+								<option>18:00</option>
+								<option>19:00</option>
+								<option>20:00</option>
+								<option>21:00</option>
+								<option>22:00</option>
+								<option>23:00</option>
+							</select>
+						</label>
+					</div>
+				</div>
+
+				<input id="" type='submit' class="button search-car" value="Search Car" />
+
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class="small-3 left filter">
+				<h2>Filter by:</h2>
+				<ul class="filter-block">
+					<li><p class="ttl">Passengers Quantity</p>
+						<ul>
+							<li><input type="checkbox" id="pas1"><label for="pas1"><span>2</span> Passengers<span>11</span></label></li>
+							<li><input type="checkbox" id="pas2"><label for="pas2"><span>3</span> Passengers<span>2</span></label></li>
+							<li><input type="checkbox" id="pas3"><label for="pas3"><span>4</span> Passengers<span>17</span></label></li>
+							<li><input type="checkbox" id="pas4"><label for="pas4"><span>4+</span> Passengers<span>60</span></label></li>
+						</ul>
+					</li>
+					<li><p class="ttl">Price</p>
+						<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+						<div id="slider-range"></div>
+					</li>
+					<li><p class="ttl">Car Group</p>
+						<ul>
+							<li><input type="checkbox" id="car1"><label for="car1">Economy<span>20</span></label></li>
+							<li><input type="checkbox" id="car2"><label for="car2">Compact<span>20</span></label></li>
+							<li><input type="checkbox" id="car3"><label for="car3">Midsize<span>11</span></label></li>
+							<li><input type="checkbox" id="car4"><label for="car4">Stabdart<span>12</span></label></li>
+							<li><input type="checkbox" id="car5"><label for="car5">Fullsize<span>5</span></label></li>
+							<li><input type="checkbox" id="car6"><label for="car6">Premium/Luxury<span>3</span></label></li>
+							<li><input type="checkbox" id="car7"><label for="car7">Minivan<span>5</span></label></li>
+							<li><input type="checkbox" id="car8"><label for="car8">Crossover<span>10</span></label></li>
+							<li><input type="checkbox" id="car9"><label for="car9">SUV<span>12</span></label></li>
+						</ul>
+					</li>
+					<li><p class="ttl">Transmission</p>
+						<ul>
+							<li><input type="checkbox" id="trans1"><label for="trans1">Automatic<span>80</span></label></li>
+							<li><input type="checkbox" id="trans2"><label for="trans2">Manual<span>25</span></label></li>
+						</ul>
+					</li>
+					<li><p class="ttl">Engine</p>
+						<ul>
+							<li><input type="checkbox" id="eng1"><label for="eng1">Gas<span>60</span></label></li>
+							<li><input type="checkbox" id="eng2"><label for="eng2">Diesel<span>35</span></label></li>
+							<li><input type="checkbox" id="eng3"><label for="eng3">Hybrid<span>22</span></label></li>
+							<li><input type="checkbox" id="eng4"><label for="eng4">Electric<span>15</span></label></li>
+						</ul>
+					</li>
+					<li><p class="ttl">Equipment</p>
+						<ul>
+							<li><input type="checkbox" id="eq1"><label for="eq1">Climate Control<span>20</span></label></li>
+							<li><input type="checkbox" id="eq2"><label for="eq2">Air Conditioning<span>20</span></label></li>
+							<li><input type="checkbox" id="eq3"><label for="eq3">Satellite Navigation<span>11</span></label></li>
+							<li><input type="checkbox" id="eq4"><label for="eq4">Power Doors Locks<span>12</span></label></li>
+							<li><input type="checkbox"><label>FM Radio<span>5</span></li>
+							<li><input type="checkbox" id="eq5"><label for="eq5">Stereo CD/MP3<span>3</span></label></li>
+							<li><input type="checkbox" id="eq6"><label for="eq6">Tilit Steering Wheel<span>5</span></label></li>
+							<li><input type="checkbox" id="eq7"><label for="eq7">Power Windows<span>10</span></label></li>
+						</ul>
+					</li>
+					<li><p class="ttl">Pickup Options</p>
+						<ul>
+							<li><input type="checkbox" id="pic1"><label for="pic1">Terminal Pickup<span>20</span></label></li>
+							<li><input type="checkbox" id="pic2"><label for="pic2">Shuttle Bus to Car<span>20</span></label></li>
+							<li><input type="checkbox" id="pic3"><label for="pic3">Meet and Greet<span>11</span></label></li>
+							<li><input type="checkbox" id="pic4"><label for="pic4">Car with Driver<span>12</span></label></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="small-9 right all-cars">
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-1.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Audi S8</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-2.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Nissan GT R</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/transfers_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-2.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Nissan GT R</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/transfers_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-2.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Nissan GT R</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/transfers_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-2.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Nissan GT R</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/transfers_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-2.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Nissan GT R</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/transfers_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="car-block">
+						<img src="img/cars/car-2.jpg">
+						<ul class="desc-wrap">
+							<li class="small-5">
+								<h6>Nissan GT R</h6>
+								<ul>
+									<li><img src="img/Icons/ready/1.png"><br><span>x 5</span><br><img src="img/Icons/ready/6.png"></li>
+									<li><img src="img/Icons/ready/2.png"><br><span>x 2</span><br><img src="img/Icons/ready/7.png"></li>
+									<li><img src="img/Icons/ready/3.png"><br><span>x 3</span><br><img src="img/Icons/ready/8.png"></li>
+									<li><img src="img/Icons/ready/4.png"><br><span>auto</span><br><img src="img/Icons/ready/9.png"></li>
+									<li><img src="img/Icons/ready/5.png"><br><span>hybrid</span><br><img src="img/Icons/ready/10.png"></li>
+								</ul>
+							</li>
+							<li class="small-3 center">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/flight_icon.png">
+								<img src="img/Icons/transfers_icon.png">
+							</li>
+							<li class="small-3 last">
+								<p class="cost">32&#8364<span>/day</span><br><span>Fullsize</span></p>
+								<a class="book-link" href="#">Book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:content -->
+
+	<!-- start:footer -->
+	<div class='row' id='footer'>
+		<div class='small-2 columns'>
+			<b>Company</b>
+
+			<ul class='navigation'>
+				<li><a href='#'>About Us</a></li>
+				<li><a href='#'>FAQs</a></li>
+				<li><a href='#'>Terms and Conditions</a></li>
+				<li><a href='#'>Privacy</a></li>
+				<li><a href='#'>Contact Us</a></li>
+				<li><a href='#'>Careers</a></li>
+			</ul>
+		</div>
+
+		<div class='small-8 columns text-center'>
+			<b>Be social</b>
+
+			<div class='social-networks'>
+				<a href="#">
+					<img src='img/Facebook-icon.png' alt="Share Facebook" />
+				</a>
+
+				<a href="#">
+					<img src='img/Twitter-icon.png' alt="Share Twitter" />
+				</a>
+
+				<a href="#">
+					<img src='img/Pinterest-icon.png' alt="Share Pinterest" />
+				</a>
+			</div>
+		</div>
+
+		<div class='small-2 columns'>
+			<img src='img/payments.jpg' alt="Payments" />
+		</div>
+
+
+	</div>
+
+	<!-- end:footer -->
+
+	<!-- start:sign-in-modal -->
+	<div id="sign-in-modal" class="reveal-modal auth-modal" data-reveal>
+		<h2>Login to Hotelio</h2>
+		<div class='row'>
+			<div class='small-12 medium-6 columns'>
+				<form>
+					 <label>Email or Username
+						 <input type="text" />
+					 </label>
+					 <label>Password
+						 <input type="password" />
+					 </label>
+					 <input type="submit" class="submit" value="Login" />
+				</form>
+				<p>
+					Don't have Hotelio account?
+					<a href='#' data-reveal-id="sign-up-modal">Sign Up now!</a>
+				</p>
+			</div>
+			<div class='small-12 medium-6 columns right-block'>
+				<em>OR</em>
+				<div class='row text-center'>
+					<img id="fb-connect" src="img/flogin.jpg" width="205" height="36" alt="">
+					<p>Save time and remember one less password. Log into Hotelio using facebook.</p>
+				</div>
+			</div>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end:sign-in-modal -->
+
+	<!-- start:sign-up-modal -->
+	<div id="sign-up-modal" class="reveal-modal auth-modal" data-reveal>
+		<h2>Create your Hotelio account</h2>
+		<div class='row'>
+			<div class='small-12 medium-6 columns'>
+				<form>
+					 <label>Enter Email address
+						 <input type="text" />
+					 </label>
+					 <label>Choose password
+						 <input type="password" />
+					 </label>
+					 <label>Re-enter password
+						 <input type="password" />
+					 </label>
+					 <input type="submit" class="submit" value="Create Account" />
+				</form>
+				<p>
+					Already have Hotelio account?
+					<a href='#' data-reveal-id="sign-in-modal">Sign in.</a>
+				</p>
+			</div>
+			<div class='small-12 medium-6 columns right-block'>
+				<em>OR</em>
+				<div class='row text-center'>
+					<img id="fb-connect" src="img/flogin.jpg" width="205" height="36" alt="" />
+					<p>Save time and remember one less password. Log into Hotelio using facebook.</p>
+
+					<div class='account-benefits text-left'>
+						<h4>Hotelio account benefits</h4>
+						<div class='benefit my_trips'>
+							<b>My Trips</b><br/>
+							Manage, sync and share your itinerary
+						</div>
+
+						<div class='benefit my_account'>
+							<b>Account</b><br/>
+							My Bookings info, travel &amp; search history
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end:sign-up-modal -->
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/vendor/foundation.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/landing.js"></script>
+</body>
+</html>

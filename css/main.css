@@ -1,0 +1,339 @@
+body, h1, h2, h3, h4, h5, h6, label {
+  font: 400 13px/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a {
+  color: #2C67B3;
+  font-size: 13px;
+}
+
+#top-bar {
+  padding: 0 4%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: solid #CACACA 1px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#top-bar ul {
+  list-style: none;
+  margin: 5px 0;
+}
+
+#top-bar ul#primary-links {
+  margin: 0 0 0 10px;
+  height: 50px;
+}
+
+#top-bar ul#primary-links > li.has-dropdown {
+  height: 50px;
+}
+
+#top-bar ul#primary-links > li.has-dropdown:hover {
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px #CCC inset;
+}
+
+#top-bar .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #F7F7F7;
+  width: 450px;
+  z-index: 500;
+  padding: 10px 0;
+  margin: 30px 0 0 -24px;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+#top-bar li.has-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#top-bar .dropdown-menu a.menu-element {
+  float: left;
+  width: 100%;
+  margin: 10px 0 4px 0;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 50px;
+}
+
+#top-bar .dropdown-menu a.menu-element > p {
+  color: #7E7E7E;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+
+
+#top-bar .dropdown-menu a:hover {
+  color: #F77521;
+}
+
+#top-bar .dropdown-menu a.flight-and-auto {
+  background-image: url('../img/Icons/flight_and_auto_icon.png');
+}
+
+#top-bar .dropdown-menu a.flight-and-auto:hover {
+  background-image: url('../img/Icons/flight_and_auto_icon_active.png');
+}
+
+#top-bar .dropdown-menu a.tickets {
+  background-image: url('../img/Icons/tickets.png');
+}
+
+#top-bar .dropdown-menu a.tickets:hover {
+  background-image: url('../img/Icons/tickets_active.png');
+}
+
+#top-bar .dropdown-menu a.international-flights {
+  background-image: url('../img/Icons/flight_icon.png');
+}
+
+#top-bar .dropdown-menu a.international-flights:hover {
+  background-image: url('../img/Icons/flight_icon_active.png');
+}
+
+#top-bar .dropdown-menu a.offers-and-promotions {
+  background-image: url('../img/Icons/deal.png');
+}
+
+#top-bar .dropdown-menu a.offers-and-promotions:hover {
+  background-image: url('../img/Icons/deal_active.png');
+}
+
+#top-bar .dropdown-menu a.weekend-gateways {
+  background-image: url('../img/Icons/weekend_gateways.png');
+}
+
+#top-bar .dropdown-menu a.weekend-gateways:hover {
+  background-image: url('../img/Icons/weekend_gateways_active.png');
+}
+
+#top-bar ul#primary-links > li {
+  float: left;
+  line-height: 35px;
+}
+
+#top-bar ul#primary-links > li:not(.has-dropdown) {
+  margin: 5px 7px 0 7px;
+  border-bottom: solid #FFF 4px;
+}
+
+#top-bar ul#primary-links > li > a {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 10px 0 10px 35px;
+}
+
+#top-bar ul#primary-links > li.more {
+  padding: 20px 25px;
+  background: url('../img/Icons/navigation_more_icon.png') no-repeat center;
+}
+
+#top-bar ul#primary-links > li:hover {
+  border-color: #F77521;
+}
+
+#top-bar ul > li:hover > a {
+  color: #F77521;
+}
+
+#top-bar ul#primary-links > li.flights a {
+  background-image: url('../img/Icons/flight_icon.png');
+}
+
+#top-bar ul#primary-links > li.flights:hover a {
+  background-image: url('../img/Icons/flight_icon_active.png');
+}
+
+#top-bar ul#primary-links > li.hotels a {
+  background-image: url('../img/Icons/hotels_icon.png');
+}
+
+#top-bar ul#primary-links > li.hotels:hover a {
+  background-image: url('../img/Icons/hotels_icon_active.png');
+}
+
+#top-bar ul#primary-links > li.flight_and_hotel a {
+  background-image: url('../img/Icons/flight_and_hotel_icon.png');
+}
+
+#top-bar ul#primary-links > li.flight_and_hotel:hover a {
+  background-image: url('../img/Icons/flight_and_hotel_icon_active.png');
+}
+
+#top-bar ul#primary-links > li.transfers a {
+  background-image: url('../img/Icons/transfers_icon.png');
+}
+
+#top-bar ul#primary-links > li.transfers:hover a {
+  background-image: url('../img/Icons/transfers_icon_active.png');
+}
+
+#top-bar ul#primary-links > li.autos a {
+  background-image: url('../img/Icons/autos_icon.png');
+}
+
+#top-bar ul#primary-links > li.autos:hover a {
+  background-image: url('../img/Icons/autos_icon_active.png');
+}
+
+#top-bar ul#secondary-links > li {
+  float: left;
+  margin: 0 7px;
+  line-height: 35px;
+  border-bottom: solid #FFF 4px;
+}
+
+#top-bar ul#secondary-links > li.with-icon a {
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 10px 0 10px 25px;
+}
+
+#top-bar ul#secondary-links > li.print-ticket a {
+  background-image: url('../img/Icons/print_ticket.png');
+}
+
+#top-bar ul#secondary-links > li.print-ticket:hover a {
+  background-image: url('../img/Icons/print_ticket_active.png');
+}
+
+#top-bar ul#secondary-links > li.customer-support a {
+  background-image: url('../img/Icons/customer_support.png');
+}
+
+#top-bar ul#secondary-links > li.customer-support:hover a {
+  background-image: url('../img/Icons/customer_support_active.png');
+}
+
+#top-bar ul#secondary-links > li.user a {
+  background-image: url('../img/Icons/user_icon.png');
+}
+
+div.content {
+  margin-top: 30px;
+}
+
+#footer {
+  margin-top: 10px;
+  padding: 20px 0;
+  border-top: solid #B5B5B5 1px;
+}
+
+#footer ul.navigation {
+  margin: 20px 0 0 0;
+  list-style: none;
+}
+
+#footer div.social-networks {
+  margin-top: 20px;
+}
+
+
+.auth-modal h2 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.auth-modal p {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.auth-modal input[type='text'], .auth-modal input[type='password'] {
+  width: 80%;
+  min-width: 200px;
+}
+
+.auth-modal .submit {
+  text-align: center;
+  background: #2E66B3;
+  border: 1px solid #013D7B;
+  font: bold 14px Arial;
+  color: #FFF;
+  box-shadow: 0 2px 0 -1px #84C4F4 inset;
+  float: left;
+  font-size: 11px;
+  padding: 5px 20px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.auth-modal .right-block {
+  border-left: 1px dotted #E0E0E0;
+}
+
+#sign-in-modal .right-block .row {
+  height: 160px;
+}
+
+.auth-modal .right-block em {
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  border-radius: 20px;
+  padding: 10px;
+  background: #FFF;
+  border: 1px solid #DBDBDB;
+  font-style: normal;
+}
+
+.auth-modal .right-block p {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.auth-modal #fb-connect {
+  margin-top: 20px;
+}
+
+#sign-up-modal .account-benefits {
+  float: left;
+  padding: 0 30px;
+  margin-top: 10px;
+}
+
+#sign-up-modal .account-benefits h4 {
+  font-size: 17px;
+}
+
+#sign-up-modal .account-benefits .benefit {
+  float: left;
+  width: 100%;
+  margin: 5px 0 10px 0;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 45px;
+}
+
+#sign-up-modal .account-benefits .benefit.my_trips {
+  background-image: url('../img/Icons/my_trips_icon.jpg');
+}
+
+#sign-up-modal .account-benefits .benefit.my_account {
+  background-image: url('../img/Icons/my_account_icon.jpg');
+}
+
+table thead {
+  background: none;
+}
+
+.ui-datepicker table {
+  border: none;
+}
+
+.ui-datepicker th {
+  font-weight: normal;
+}

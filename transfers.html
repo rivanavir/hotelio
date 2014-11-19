@@ -1,0 +1,631 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Hotelio/Transfers</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+	<link rel="stylesheet" href="css/vendor/normalize.css">
+	<link rel="stylesheet" href="css/vendor/foundation.min.css">
+	<link rel="stylesheet" href="css/vendor/jquery-ui/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/landing_page.css">
+	<link rel="stylesheet" href="css/search.css">
+
+	<script src="js/vendor/modernizr.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- start:navbar -->
+	<div id='top-bar'>
+		<div class='wrapper'>
+			<a href="#" class="left"><img src="img/logo.png" alt="Hotelio logo"/></a>
+
+
+			<ul id="primary-links" class="left links-section">
+				<li class='flights'>
+					<a href="#">Flights</a>
+				</li>
+				<li class='hotels'>
+					<a href="#">Hotels</a>
+				</li>
+				<li class='flight_and_hotel'>
+					<a href='#'>Flight+Hotel</a>
+				</li>
+				<li class='transfers'>
+					<a href='#'>Transfers</a>
+				</li>
+				<li class='autos'>
+					<a href='#'>Autos</a>
+				</li>
+				<li class='more has-dropdown'>
+					<div class='dropdown-menu'>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element flight-and-auto'>
+									Flights &amp; Auto
+									<p>Get great deals on flight and car rental packages.Get the most from your holiday.</p>
+								</a>
+							</div>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element tickets'>
+									Tickets
+									<p>Spice up your trips with local attractions. Let the fun begin!</p>
+								</a>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element international-flights'>
+									International Flights
+									<p>Book International flights with lowest rates available across.</p>
+								</a>
+							</div>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element offers-and-promotions'>
+									Offers &amp; Promotions
+									<p>Check out the BEST offers and promotions while you book your trips.</p>
+								</a>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element weekend-gateways'>
+									Weekend Gateways
+									<p>Go on for a quick break in the upcoming weekends.</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul id='secondary-links' class='right'>
+				<li class='with-icon print-ticket'><a href="#">Print Ticket</a></li>
+				<li class='with-icon customer-support'><a href="#">24x7 Customer Support</a></li>
+				<li><a href="#" data-reveal-id="sign-in-modal">Sign In</a></li>
+				<li><a href="#" data-reveal-id="sign-up-modal">Sign Up</a></li>
+				<li class='with-icon user hide'><a href="#">Ismael</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- end:navbar -->
+
+	<!-- start:content -->
+	<div class='content' id="transfer-page">
+		<div class='row'>
+
+			<!-- end:flight-search -->
+			<div id='transfer' class='small-12 large-12 columns form-wrap-block'>
+
+				<!-- start:search-first-section -->
+				<div class='row'>
+					<div class='small-12 columns'>
+
+						<!-- start:simple-search -->
+						<h2 class='book-title'>Book a transfer to or from your resort</h2>
+
+						<div id="search-type" class='row'>
+							<div class='small-12 columns'>
+								<input type="radio" name="search_type" value="round_trip" id="round_trip" checked="checked">
+								<label for="round_trip">Airport to Resort</label>
+
+								<input type="radio" name="search_type" value="multi_city" id="multi_city">
+								<label for="multi_city">Resort to Airport</label>
+							</div>
+						</div>
+						<!-- start: Airport-to-Resort -->
+						<div id='simple-search' class='row destination-date-select'>
+							<div class='small-12 medium-5 columns right-line'>
+								<label class="resort">Arrival Airport
+									<input type="text" placeholder="Alicante (EI Altet Airport) (ALC)">
+								</label>
+								<label class="resort">Arrival Resort
+									<input type="text" placeholder="Alicante">
+								</label>
+								<label class="small-4 resort">Return Transfer
+									<select id="return-transfer">
+										<option value="single" selected>No</option>
+										<option value="return">Yes</option>
+									</select>
+								</label>
+							</div>
+
+							<div class='small-12 medium-7 columns padding-left'>
+								<div class="small-12 date-select resort">
+									<h4>Flight Arrival</h4>
+									<div class='small-8 datepick-st'>
+										<span class='calendar-icon'></span>
+										<input type="text" id="arrival-date1" placeholder="10/10/2014">
+									</div>
+									<select class="small-2 time-st">
+										<option>00:00</option>
+										<option>01:00</option>
+										<option>02:00</option>
+										<option>03:00</option>
+										<option>04:00</option>
+										<option>05:00</option>
+										<option>06:00</option>
+										<option>07:00</option>
+										<option>08:00</option>
+										<option>09:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+										<option>18:00</option>
+										<option>19:00</option>
+										<option>20:00</option>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+									</select>
+									<select class="small-2 end">
+										<option value="">00</option>
+										<option value="">05</option>
+										<option value="">10</option>
+										<option value="">15</option>
+										<option value="">20</option>
+										<option value="">25</option>
+										<option value="">30</option>
+										<option value="">35</option>
+										<option value="">40</option>
+										<option value="">45</option>
+										<option value="">50</option>
+										<option value="">55</option>
+									</select>
+								</div>
+								<div class="small-12 date-select resort">
+									<h4>Flight Departure</h4>
+									<div class='small-8 datepick-st'>
+										<span class='calendar-icon'></span>
+										<input type="text" id="depart-date1" disabled placeholder="10/10/2014">
+									</div>
+									<select class="small-2 time-st" id="time-st" disabled>
+										<option>00:00</option>
+										<option>01:00</option>
+										<option>02:00</option>
+										<option>03:00</option>
+										<option>04:00</option>
+										<option>05:00</option>
+										<option>06:00</option>
+										<option>07:00</option>
+										<option>08:00</option>
+										<option>09:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+										<option>18:00</option>
+										<option>19:00</option>
+										<option>20:00</option>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+									</select>
+									<select class="small-2 end" id="sec-st" disabled>
+										<option value="">00</option>
+										<option value="">05</option>
+										<option value="">10</option>
+										<option value="">15</option>
+										<option value="">20</option>
+										<option value="">25</option>
+										<option value="">30</option>
+										<option value="">35</option>
+										<option value="">40</option>
+										<option value="">45</option>
+										<option value="">50</option>
+										<option value="">55</option>
+									</select>
+								</div>
+								<div id='passengers' class='row'>
+									<div class='small-3 columns'>
+										<p class="ttl">Passangers</p>
+									</div>
+									<div class='small-3 columns'>
+										<label>Adults <small>12+ yrs</small></label>
+										<div class='passengers-select'>
+											<input type='hidden' name='adults_count' />
+											<span class='control minus'></span>
+											<span class='control count'>1</span>
+											<span class='control plus'></span>
+										</div>
+									</div>
+									<div class='small-3 columns'>
+										<label>Children <small>2-12 yrs</small></label>
+										<div class='passengers-select'>
+											<input type='hidden' name='children_count' />
+											<span class='control minus'></span>
+											<span class='control count'>0</span>
+											<span class='control plus'></span>
+										</div>
+									</div>
+									<div class='small-3 columns'>
+										<label>Infants <small>below 2 yrs</small></label>
+										<div class='passengers-select'>
+											<input type='hidden' name='infants_count' />
+											<span class='control minus'></span>
+											<span class='control count'>0</span>
+											<span class='control plus'></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end: Airport-to-Resort -->
+						<!-- start: Resort-to-Airport -->
+						<div id='multi-search' class='row destination-date-select hide'>
+							<div class='small-12 medium-5 columns right-line'>
+								<label class="resort">Departure Airport
+									<input type="text" placeholder="Alicante (EI Altet Airport) (ALC)">
+								</label>
+								<label class="resort">Accommodation Resort
+									<input type="text" placeholder="Alicante">
+								</label>
+								<label class="small-4 resort">Return Transfer
+									<select disabled="disabled">
+										<option value="" selected>No</option>
+										<option value="">Yes</option>
+									</select>
+								</label>
+							</div>
+
+							<div class='small-12 medium-7 columns padding-left'>
+								<div class="small-12 date-select resort">
+									<h4>Flight Departure</h4>
+									<div class='small-8 datepick-st'>
+										<span class='calendar-icon'></span>
+										<input type="text" id="arrival-date2" placeholder="10/10/2014">
+									</div>
+									<select class="small-2 time-st">
+										<option>00:00</option>
+										<option>01:00</option>
+										<option>02:00</option>
+										<option>03:00</option>
+										<option>04:00</option>
+										<option>05:00</option>
+										<option>06:00</option>
+										<option>07:00</option>
+										<option>08:00</option>
+										<option>09:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+										<option>18:00</option>
+										<option>19:00</option>
+										<option>20:00</option>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+									</select>
+									<select class="small-2 end">
+										<option value="">00</option>
+										<option value="">05</option>
+										<option value="">10</option>
+										<option value="">15</option>
+										<option value="">20</option>
+										<option value="">25</option>
+										<option value="">30</option>
+										<option value="">35</option>
+										<option value="">40</option>
+										<option value="">45</option>
+										<option value="">50</option>
+										<option value="">55</option>
+									</select>
+								</div>
+								<div class="small-12 date-select resort disabled">
+									<h4>Flight Arrival</h4>
+									<div class='small-8 datepick-st'>
+										<span class='calendar-icon'></span>
+										<input type="text" id="depart-date2" disabled placeholder="10/10/2014">
+									</div>
+									<select class="small-2 time-st" disabled>
+										<option>00:00</option>
+										<option>01:00</option>
+										<option>02:00</option>
+										<option>03:00</option>
+										<option>04:00</option>
+										<option>05:00</option>
+										<option>06:00</option>
+										<option>07:00</option>
+										<option>08:00</option>
+										<option>09:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+										<option>18:00</option>
+										<option>19:00</option>
+										<option>20:00</option>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+									</select>
+									<select class="small-2 end" disabled>
+										<option value="">00</option>
+										<option value="">05</option>
+										<option value="">10</option>
+										<option value="">15</option>
+										<option value="">20</option>
+										<option value="">25</option>
+										<option value="">30</option>
+										<option value="">35</option>
+										<option value="">40</option>
+										<option value="">45</option>
+										<option value="">50</option>
+										<option value="">55</option>
+									</select>
+								</div>
+								<div id='passengers' class='row'>
+									<div class='small-3 columns'>
+										<p class="ttl">Passangers</p>
+									</div>
+									<div class='small-3 columns'>
+										<label>Adults <small>12+ yrs</small></label>
+										<div class='passengers-select'>
+											<input type='hidden' name='adults_count' />
+											<span class='control minus'></span>
+											<span class='control count'>1</span>
+											<span class='control plus'></span>
+										</div>
+									</div>
+									<div class='small-3 columns'>
+										<label>Children <small>2-12 yrs</small></label>
+										<div class='passengers-select'>
+											<input type='hidden' name='children_count' />
+											<span class='control minus'></span>
+											<span class='control count'>0</span>
+											<span class='control plus'></span>
+										</div>
+									</div>
+									<div class='small-3 columns'>
+										<label>Infants <small>below 2 yrs</small></label>
+										<div class='passengers-select'>
+											<input type='hidden' name='infants_count' />
+											<span class='control minus'></span>
+											<span class='control count'>0</span>
+											<span class='control plus'></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end:Resort-to-Airport -->
+					</div>
+
+			</div>
+				<!-- end:search-first-section -->
+
+				<!-- start:search-third-section -->
+				<div class='row'>
+					<div class='small-12 columns text-right'>
+						<input id="submit-search" type='submit' class="button" value="Search" />
+					</div>
+				</div>
+				<!-- end:search-third-section -->
+
+		</div>
+			<!-- end:flight-search -->
+		</div>
+
+		<!-- start:intermediate-menu -->
+		<div id="intermediate-menu" class='row'>
+			<div class='small-4 columns'>
+				<a class='low-rates' href='#'>Low Rates</a>
+			</div>
+			<div class='small-4 columns'>
+				<a class='combine-and-save' href='#'>Combine &amp; Save</a>
+			</div>
+			<div class='small-4 columns'>
+				<a class='manage-online' href='#'>Manage you bookings online</a>
+			</div>
+		</div>
+		<!-- end:intermediate-menu -->
+
+		<!-- start:hot-deals -->
+		<div id='today-deals' class='row'>
+			<h5>Check out these awesome destinations</h5>
+
+			<ul class="small-block-grid-2">
+				<li>
+					<div class="city-ttl"><p>Bangkok</p><a href="#">Thailand</a></div><img src='img/destination/bangkok.jpg'/>
+				</li>
+				<li class=''>
+					<div class="city-ttl"><p>Manila</p><a href="#">Philippines</a></div>
+					<img src='img/destination/manila.jpg'/></li>
+				<li class='' style="clear:right">
+					<div class="city-ttl"><p>Moscow</p><a href="#">Russia</a></div>
+					<img src='img/destination/moscow.jpg'/></li>
+				<li>
+					<div class="city-ttl"><p>New Dephi</p><a href="#">India</a></div>
+					<img src='img/destination/newdephi.jpg'/></li>
+				<li class="little">
+					<div class="city-ttl"><p>Tel Aviv</p><a href="#">Israel</a></div>
+					<img src='img/destination/telaviv.jpg'/></li>
+				<li class='little'>
+					<div class="city-ttl"><p>Dublin</p><a href="#">Ireland</a></div>
+					<img src='img/destination/dublin.jpg'/></li>
+				<li class=''>
+					<div class="city-ttl"><p>Milano</p><a href="#">Italy</a></div>
+					<img src='img/destination/milano.jpg'/></li>
+				<li class='little'>
+					<div class="city-ttl"><p>Frankfurt</p><a href="#">Germany</a></div>
+					<img src='img/destination/frankfurt.jpg'/></li>
+				<li class='little'>
+					<div class="city-ttl"><p>Seul</p><a href="#">South Korea</a></div>
+					<img src='img/destination/Seul.jpg'/></li>
+				<li class='' style="clear:left">
+					<ul class="sub">
+						<li>
+							<div class="city-ttl"><p>Miami</p><a href="#">United Satates</a></div>
+							<img src='img/destination/miami.jpg'/>
+						</li>
+						<li class='' style="clear:left">
+							<div class="city-ttl"><p>Madrid</p><a href="#">Spain</a></div>
+							<img src='img/destination/madrid.jpg'/>
+						</li>
+					</ul>
+				</li>
+				<li class='' style="clear:right">
+					<div class="city-ttl"><p>los Angeles</p><a href="#">United States</a></div>
+					<img src='img/destination/losangeles.jpg'/></li>
+			</ul>
+		</div>
+		<!-- end:hot-deals -->
+
+	</div>
+	<!-- end:content -->
+
+	<!-- start:footer -->
+	<div class='row' id='footer'>
+		<div class='small-2 columns'>
+			<b>Company</b>
+
+			<ul class='navigation'>
+				<li><a href='#'>About Us</a></li>
+				<li><a href='#'>FAQs</a></li>
+				<li><a href='#'>Terms and Conditions</a></li>
+				<li><a href='#'>Privacy</a></li>
+				<li><a href='#'>Contact Us</a></li>
+				<li><a href='#'>Careers</a></li>
+			</ul>
+		</div>
+
+		<div class='small-8 columns text-center'>
+			<b>Be social</b>
+
+			<div class='social-networks'>
+				<a href="#">
+					<img src='img/Facebook-icon.png' alt="Share Facebook" />
+				</a>
+
+				<a href="#">
+					<img src='img/Twitter-icon.png' alt="Share Twitter" />
+				</a>
+
+				<a href="#">
+					<img src='img/Pinterest-icon.png' alt="Share Pinterest" />
+				</a>
+			</div>
+		</div>
+
+		<div class='small-2 columns'>
+			<img src='img/payments.jpg' alt="Payments" />
+		</div>
+
+
+	</div>
+
+	<!-- end:footer -->
+
+	<!-- start:sign-in-modal -->
+	<div id="sign-in-modal" class="reveal-modal auth-modal" data-reveal>
+		<h2>Login to Hotelio</h2>
+		<div class='row'>
+			<div class='small-12 medium-6 columns'>
+				<form>
+					 <label>Email or Username
+						 <input type="text" />
+					 </label>
+					 <label>Password
+						 <input type="password" />
+					 </label>
+					 <input type="submit" class="submit" value="Login" />
+				</form>
+				<p>
+					Don't have Hotelio account?
+					<a href='#' data-reveal-id="sign-up-modal">Sign Up now!</a>
+				</p>
+			</div>
+			<div class='small-12 medium-6 columns right-block'>
+				<em>OR</em>
+				<div class='row text-center'>
+					<img id="fb-connect" src="img/flogin.jpg" width="205" height="36" alt="">
+					<p>Save time and remember one less password. Log into Hotelio using facebook.</p>
+				</div>
+			</div>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end:sign-in-modal -->
+
+	<!-- start:sign-up-modal -->
+	<div id="sign-up-modal" class="reveal-modal auth-modal" data-reveal>
+		<h2>Create your Hotelio account</h2>
+		<div class='row'>
+			<div class='small-12 medium-6 columns'>
+				<form>
+					 <label>Enter Email address
+						 <input type="text" />
+					 </label>
+					 <label>Choose password
+						 <input type="password" />
+					 </label>
+					 <label>Re-enter password
+						 <input type="password" />
+					 </label>
+					 <input type="submit" class="submit" value="Create Account" />
+				</form>
+				<p>
+					Already have Hotelio account?
+					<a href='#' data-reveal-id="sign-in-modal">Sign in.</a>
+				</p>
+			</div>
+			<div class='small-12 medium-6 columns right-block'>
+				<em>OR</em>
+				<div class='row text-center'>
+					<img id="fb-connect" src="img/flogin.jpg" width="205" height="36" alt="" />
+					<p>Save time and remember one less password. Log into Hotelio using facebook.</p>
+
+					<div class='account-benefits text-left'>
+						<h4>Hotelio account benefits</h4>
+						<div class='benefit my_trips'>
+							<b>My Trips</b><br/>
+							Manage, sync and share your itinerary
+						</div>
+
+						<div class='benefit my_account'>
+							<b>Account</b><br/>
+							My Bookings info, travel &amp; search history
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end:sign-up-modal -->
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/vendor/foundation.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/landing.js"></script>
+</body>
+</html>

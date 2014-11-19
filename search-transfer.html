@@ -1,0 +1,336 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Search Transfer</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+	<link rel="stylesheet" href="css/vendor/normalize.css">
+	<link rel="stylesheet" href="css/vendor/foundation.min.css">
+	<link rel="stylesheet" href="css/vendor/jquery-ui/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/landing_page.css">
+	<link rel="stylesheet" href="css/search.css">
+
+	<script src="js/vendor/modernizr.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- start: modal -->
+	<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+	<div id="myModal" class="reveal-modal clearfix" data-reveal>
+		<h4>Enter your transfer data as accurately as possible. This way we san offer you a better service.</h4>
+		<div class="wrapper clearfix">
+			<h2>Go Transfer</h2>
+			<h4>Arriving Flight:</h4>
+
+			<div class="modal-layer">
+				<h4>Flight Number</h4>
+				<input type="text" placeholder="E.g. IB 0796">
+			</div>
+			<div class="modal-layer">
+				<h4>Arrival Time (Flight)</h4>
+				<select>
+					<option value="">hh</option>
+				</select>
+				<select>
+					<option value="">mm</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="wrapper clearfix">
+			<h2>Return Transfer</h2>
+			<h4>Departing Flight:</h4>
+
+			<div class="modal-layer">
+				<h4>Flight Number</h4>
+				<input type="text" placeholder="E.g. IB 0796">
+			</div>
+			<div class="modal-layer">
+				<h4>Departing Time (Flight)</h4>
+				<select>
+					<option value="">hh</option>
+				</select>
+				<select>
+					<option value="">mm</option>
+				</select>
+			</div>
+		</div>
+		<a href="#" class="modal-but">Continue</a>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end: modal -->
+
+	<!-- start:navbar -->
+	<div id='top-bar'>
+		<div class='wrapper'>
+			<a href="#" class="left"><img src="img/logo.png" alt="Hotelio logo"/></a>
+
+
+			<ul id="primary-links" class="left links-section">
+				<li class='flights'>
+					<a href="#">Flights</a>
+				</li>
+				<li class='hotels'>
+					<a href="#">Hotels</a>
+				</li>
+				<li class='flight_and_hotel'>
+					<a href='#'>Flight+Hotel</a>
+				</li>
+				<li class='transfers'>
+					<a href='#'>Transfers</a>
+				</li>
+				<li class='autos'>
+					<a href='#'>Autos</a>
+				</li>
+				<li class='more has-dropdown'>
+					<div class='dropdown-menu'>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element flight-and-auto'>
+									Flights &amp; Auto
+									<p>Get great deals on flight and car rental packages.Get the most from your holiday.</p>
+								</a>
+							</div>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element tickets'>
+									Tickets
+									<p>Spice up your trips with local attractions. Let the fun begin!</p>
+								</a>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element international-flights'>
+									International Flights
+									<p>Book International flights with lowest rates available across.</p>
+								</a>
+							</div>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element offers-and-promotions'>
+									Offers &amp; Promotions
+									<p>Check out the BEST offers and promotions while you book your trips.</p>
+								</a>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='small-6 columns'>
+								<a href='#' class='menu-element weekend-gateways'>
+									Weekend Gateways
+									<p>Go on for a quick break in the upcoming weekends.</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul id='secondary-links' class='right'>
+				<li class='with-icon print-ticket'><a href="#">Print Ticket</a></li>
+				<li class='with-icon customer-support'><a href="#">24x7 Customer Support</a></li>
+				<li><a href="#" data-reveal-id="sign-in-modal">Sign In</a></li>
+				<li><a href="#" data-reveal-id="sign-up-modal">Sign Up</a></li>
+				<li class='with-icon user hide'><a href="#">Ismael</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- end:navbar -->
+
+	<!-- start:content -->
+	<div class='content' id="search-transfer-page">
+
+		<div class='row'>
+			<div class="small-12 modify clearfix">
+				<nav class="breadcrumb left">
+					<a href="#">Amsterdam, Airport Schiphol (AMS) - NETHERLANDS</a>
+					<a href="#">Amsterdam City Centre</a>
+				</nav>
+				<p class="mod-txt right">Sun Sep 28 2014 <span class="man"><img src="img/Icons/ready/84.png" alt=""></span>1 Adult
+					<a class="modify-search right" href="#">Modify Search</a>
+					</p>
+			</div>
+			<div class="small-12 all-transfer clearfix">
+				<div class="trans-block clearfix">
+					<div class="small-4 left img-wrap"><img src="img/Icons/ready/81.png"></div>
+					<div class="small-8 right content-layer">
+						<h6>Private - Premium Car</h6>
+						<p class="price">100 &#8364;<br><span>total price</span><a href="#" class="book-link">Book</a></p>
+						<ul class="info-txt">
+							<li><span><img src="img/Icons/ready/78.png"></span>Maximum stops: Door to door service</li>
+							<li><span><img src="img/Icons/ready/79.png" alt=""></span>Available 24/7</li>
+							<li><span><img src="img/Icons/1.png"></span>Waiting time: 60 minutes</li>
+							<li><span><img src="img/Icons/ready/80.png"></span>Exclusive ride for you</li>
+							<li><span><img src="img/Icons/ready/80.png"></span>Baggage: 1 baggage sllowed per person</li>
+						</ul>
+					</div>
+				</div>
+				<div class="trans-block clearfix">
+					<div class="small-4 left img-wrap"><img src="img/Icons/ready/82.png"></div>
+					<div class="small-8 right content-layer">
+						<h6>Private - Premium Car</h6>
+						<p class="price">100 &#8364;<br><span>total price</span><a href="#" class="book-link">Book</a></p>
+						<ul class="info-txt">
+							<li><span><img src="img/Icons/ready/78.png"></span>Maximum stops: Door to door service</li>
+							<li><span><img src="img/Icons/ready/79.png" alt=""></span>Available 24/7</li>
+							<li><span><img src="img/Icons/1.png"></span>Waiting time: 60 minutes</li>
+							<li><span><img src="img/Icons/ready/80.png"></span>Exclusive ride for you</li>
+							<li><span><img src="img/Icons/ready/80.png"></span>Baggage: 1 baggage sllowed per person</li>
+						</ul>
+					</div>
+				</div>
+				<div class="trans-block clearfix">
+					<div class="small-4 left img-wrap"><img src="img/Icons/ready/83.png"></div>
+					<div class="small-8 right content-layer">
+						<h6>Private - Premium Car</h6>
+						<p class="price">100 &#8364;<br><span>total price</span><a href="#" class="book-link">Book</a></p>
+						<ul class="info-txt">
+							<li><span><img src="img/Icons/ready/78.png"></span>Maximum stops: Door to door service</li>
+							<li><span><img src="img/Icons/ready/79.png" alt=""></span>Available 24/7</li>
+							<li><span><img src="img/Icons/1.png"></span>Waiting time: 60 minutes</li>
+							<li><span><img src="img/Icons/ready/80.png"></span>Exclusive ride for you</li>
+							<li><span><img src="img/Icons/ready/80.png"></span>Baggage: 1 baggage sllowed per person</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:content -->
+
+	<!-- start:footer -->
+	<div class='row' id='footer'>
+		<div class='small-2 columns'>
+			<b>Company</b>
+
+			<ul class='navigation'>
+				<li><a href='#'>About Us</a></li>
+				<li><a href='#'>FAQs</a></li>
+				<li><a href='#'>Terms and Conditions</a></li>
+				<li><a href='#'>Privacy</a></li>
+				<li><a href='#'>Contact Us</a></li>
+				<li><a href='#'>Careers</a></li>
+			</ul>
+		</div>
+
+		<div class='small-8 columns text-center'>
+			<b>Be social</b>
+
+			<div class='social-networks'>
+				<a href="#">
+					<img src='img/Facebook-icon.png' alt="Share Facebook" />
+				</a>
+
+				<a href="#">
+					<img src='img/Twitter-icon.png' alt="Share Twitter" />
+				</a>
+
+				<a href="#">
+					<img src='img/Pinterest-icon.png' alt="Share Pinterest" />
+				</a>
+			</div>
+		</div>
+
+		<div class='small-2 columns'>
+			<img src='img/payments.jpg' alt="Payments" />
+		</div>
+
+
+	</div>
+
+	<!-- end:footer -->
+
+	<!-- start:sign-in-modal -->
+	<div id="sign-in-modal" class="reveal-modal auth-modal" data-reveal>
+		<h2>Login to Hotelio</h2>
+		<div class='row'>
+			<div class='small-12 medium-6 columns'>
+				<form>
+					 <label>Email or Username
+						 <input type="text" />
+					 </label>
+					 <label>Password
+						 <input type="password" />
+					 </label>
+					 <input type="submit" class="submit" value="Login" />
+				</form>
+				<p>
+					Don't have Hotelio account?
+					<a href='#' data-reveal-id="sign-up-modal">Sign Up now!</a>
+				</p>
+			</div>
+			<div class='small-12 medium-6 columns right-block'>
+				<em>OR</em>
+				<div class='row text-center'>
+					<img id="fb-connect" src="img/flogin.jpg" width="205" height="36" alt="">
+					<p>Save time and remember one less password. Log into Hotelio using facebook.</p>
+				</div>
+			</div>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end:sign-in-modal -->
+
+	<!-- start:sign-up-modal -->
+	<div id="sign-up-modal" class="reveal-modal auth-modal" data-reveal>
+		<h2>Create your Hotelio account</h2>
+		<div class='row'>
+			<div class='small-12 medium-6 columns'>
+				<form>
+					 <label>Enter Email address
+						 <input type="text" />
+					 </label>
+					 <label>Choose password
+						 <input type="password" />
+					 </label>
+					 <label>Re-enter password
+						 <input type="password" />
+					 </label>
+					 <input type="submit" class="submit" value="Create Account" />
+				</form>
+				<p>
+					Already have Hotelio account?
+					<a href='#' data-reveal-id="sign-in-modal">Sign in.</a>
+				</p>
+			</div>
+			<div class='small-12 medium-6 columns right-block'>
+				<em>OR</em>
+				<div class='row text-center'>
+					<img id="fb-connect" src="img/flogin.jpg" width="205" height="36" alt="" />
+					<p>Save time and remember one less password. Log into Hotelio using facebook.</p>
+
+					<div class='account-benefits text-left'>
+						<h4>Hotelio account benefits</h4>
+						<div class='benefit my_trips'>
+							<b>My Trips</b><br/>
+							Manage, sync and share your itinerary
+						</div>
+
+						<div class='benefit my_account'>
+							<b>Account</b><br/>
+							My Bookings info, travel &amp; search history
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- end:sign-up-modal -->
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/vendor/foundation.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/landing.js"></script>
+</body>
+</html>

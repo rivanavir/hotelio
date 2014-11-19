@@ -1,0 +1,934 @@
+.book-title {
+  font-size: 18px;
+  color: #010101;
+  margin-bottom: 30px;
+}
+
+.book-link {
+  background: #f57926;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 16px 4px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.book-link:hover {
+  color: #fff;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*modal style*/
+.reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
+  font-size: 1.5rem;
+}
+
+.reveal-modal, dialog {
+  border-radius: 0px;
+  width: 50%;
+}
+
+.reveal-modal {
+  padding-bottom: 50px;
+  position: relative;
+}
+.reveal-modal h4 {
+  color: #757374;
+  font-size: 12px;
+  font-weight: bold;
+}
+.reveal-modal .modal-but {
+  background: #2e66b3;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #013d7b;
+  border-radius: 3px;
+  padding: 5px 15px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.reveal-modal .wrapper {
+  width: 65%;
+  padding-top: 20px;
+}
+.reveal-modal .wrapper h2 {
+  font-size: 20px;
+  color: #2e66b3;
+  margin-bottom: 15px;
+}
+.reveal-modal .wrapper .modal-layer {
+  width: 46%;
+  float: left;
+  margin-right: 15px;
+}
+.reveal-modal .wrapper .modal-layer select {
+  width: 46%;
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+.reveal-modal .wrapper .modal-layer select:last-child {
+  margin-right: 0;
+}
+
+/*end modal*/
+.form-wrap-block {
+  padding: 20px 30px 0 30px;
+  border: 3px solid #C0D8FA;
+  border-radius: 10px;
+  margin-top: 25px;
+  -webkit-box-shadow: 5px 5px 5px rgba(39, 34, 26, 0.75);
+  box-shadow: 5px 5px 5px rgba(39, 34, 26, 0.75);
+}
+.form-wrap-block label {
+  font-weight: bold;
+}
+.form-wrap-block .destination-date-select {
+  margin-top: 10px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 75px;
+}
+.form-wrap-block .destination-date-select .zip-code {
+  font-size: 12px;
+  color: #474747;
+  margin-bottom: 35px;
+}
+.form-wrap-block .destination-date-select .zip-code input {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  border: 1px solid #90aac2;
+  border-top-color: #7f9db9;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #90aac2;
+  box-shadow: inset 0 1px 0 #90aac2;
+  height: 43px;
+}
+.form-wrap-block .date-select {
+  color: #444;
+  cursor: pointer;
+}
+.form-wrap-block .date-select .datepick-st {
+  width: 49%;
+  float: left;
+  position: relative;
+}
+.form-wrap-block .date-select .datepick-st.end {
+  margin-right: 0;
+}
+.form-wrap-block .date-select .datepick-st select {
+  border: 0;
+  background: transparent;
+  color: #333;
+  font-size: 16px;
+  height: 40px;
+}
+.form-wrap-block .date-select .calendar-icon {
+  top: 5px;
+  right: 8px;
+  display: block;
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background: url("../img/Icons/ready/68.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-left: 0;
+  z-index: 999;
+}
+.form-wrap-block .date-select .time-st {
+  margin: 0;
+  padding-left: 10px;
+  float: none;
+  font-size: 16px;
+  color: #333;
+  display: inline-table;
+  padding-top: 11px;
+  margin-right: 17px;
+}
+.form-wrap-block #multi-search .date-select {
+  margin-top: 0px;
+}
+.form-wrap-block #passengers {
+  margin-top: 15px;
+  padding: 15px 0;
+  border-top: solid #BEBEBE 1px;
+  border-bottom: solid #BEBEBE 1px;
+}
+.form-wrap-block #passengers label {
+  color: #000;
+}
+.form-wrap-block #passengers small {
+  text-transform: none;
+  color: #000;
+  font-size: .8em;
+  font-weight: normal;
+}
+.form-wrap-block #passengers .passengers-select {
+  margin-top: 5px;
+}
+.form-wrap-block #passengers .passengers-select .control {
+  float: left;
+  height: 29px;
+  background: url("../img/Icons/calendar-low.png") no-repeat;
+}
+.form-wrap-block #passengers .passengers-select .control.minus {
+  cursor: pointer;
+  width: 29px;
+  background-position: -193px -104px;
+}
+.form-wrap-block #passengers .passengers-select .control.count {
+  width: 34px;
+  background-position: -222px -104px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #5E5E5E;
+}
+.form-wrap-block #passengers .passengers-select .control.plus {
+  cursor: pointer;
+  width: 34px;
+  background-position: -256px -104px;
+}
+.form-wrap-block #submit-search {
+  margin-top: 15px;
+  border-radius: 7px;
+  padding: 10px 25px;
+  background-color: #2762B0;
+  font-size: 19px;
+}
+.form-wrap-block #submit-search.type-2 {
+  background-color: #f57926;
+}
+
+#arrival-date1,
+#arrival-date2,
+#depart-date1,
+#depart-date2,
+#pick-date,
+#pick-date2,
+#return-date,
+#return-date2 {
+  border: 0;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  color: #333;
+  font-size: 16px;
+  top: 1px;
+  position: relative;
+  margin: 0 !important;
+}
+#arrival-date1:hover,
+#arrival-date2:hover,
+#depart-date1:hover,
+#depart-date2:hover,
+#pick-date:hover,
+#pick-date2:hover,
+#return-date:hover,
+#return-date2:hover {
+  cursor: pointer;
+}
+#arrival-date1:disabled .datepick-st,
+#arrival-date2:disabled .datepick-st,
+#depart-date1:disabled .datepick-st,
+#depart-date2:disabled .datepick-st,
+#pick-date:disabled .datepick-st,
+#pick-date2:disabled .datepick-st,
+#return-date:disabled .datepick-st,
+#return-date2:disabled .datepick-st {
+  background: #ebebe4;
+}
+#arrival-date1:disabled .datepick-st .date-st,
+#arrival-date2:disabled .datepick-st .date-st,
+#depart-date1:disabled .datepick-st .date-st,
+#depart-date2:disabled .datepick-st .date-st,
+#pick-date:disabled .datepick-st .date-st,
+#pick-date2:disabled .datepick-st .date-st,
+#return-date:disabled .datepick-st .date-st,
+#return-date2:disabled .datepick-st .date-st {
+  color: #999;
+}
+
+#search-car-page .datepick-st {
+  width: 49%;
+  float: left;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #90aac2;
+  border-top-width: 2px;
+  border-top-color: #7f9db9;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #90aac2;
+  box-shadow: inset 0 1px 0 #90aac2;
+  height: 43px;
+  margin-right: 2%;
+  position: relative;
+}
+#search-car-page .datepick-st.end {
+  margin-right: 0;
+}
+
+.filter-block .ui-slider-horizontal {
+  height: 5px;
+}
+.filter-block .ui-state-default, .filter-block .ui-widget-content .ui-state-default, .filter-block .ui-widget-header .ui-state-default {
+  background: url("../img/Icons/ready/85.png") 0 0 no-repeat;
+  border: 0px solid #fff;
+  color: #1e5f8c;
+  font-weight: bold;
+}
+.filter-block .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  width: 96%;
+}
+.filter-block .ui-corner-all, .filter-block .ui-corner-bottom, .filter-block .ui-corner-left, .filter-block .ui-corner-br,
+.filter-block .ui-corner-all, .filter-block .ui-corner-bottom, .filter-block .ui-corner-left, .filter-block .ui-corner-bl {
+  border-radius: 0;
+}
+.filter-block .ui-slider .ui-slider-handle {
+  cursor: default;
+  height: 19px;
+  position: absolute;
+  width: 10px;
+  z-index: 2;
+}
+.filter-block .ui-slider-horizontal .ui-slider-handle {
+  top: -9px;
+  margin-left: 0;
+}
+.filter-block .ui-widget-content {
+  border: 0;
+}
+.filter-block .ui-widget-header {
+  background: #f57c32;
+}
+.filter-block #amount {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+#transfer .destination-date-select {
+  padding-bottom: 25px;
+}
+#transfer .destination-date-select .right-line {
+  border-right: 1px solid #9d9d9d;
+  padding-right: 35px;
+}
+#transfer .destination-date-select .padding-left {
+  padding-left: 35px;
+}
+#transfer .destination-date-select .resort {
+  font-size: 12px;
+  color: #474747;
+  margin-bottom: 20px;
+}
+#transfer .destination-date-select .resort h4 {
+  font-weight: bold;
+  font-size: 12px;
+}
+#transfer .destination-date-select .resort .datepick-st {
+  margin: -1px 19px 0px 0;
+  width: 57%;
+}
+#transfer .destination-date-select .resort .datepick-st .calendar-icon {
+  top: 8px;
+}
+#transfer .destination-date-select .resort .time-st {
+  vertical-align: top;
+  padding-top: 10px;
+  margin-top: 0;
+}
+#transfer .destination-date-select .resort .end {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#transfer .destination-date-select .resort select {
+  font-weight: normal;
+}
+#transfer .destination-date-select .resort select,
+#transfer .destination-date-select .resort input {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  border: 1px solid #8e8e8e;
+  border-top-color: #9d9d9d;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #8e8e8e;
+  box-shadow: inset 0 1px 0 #8e8e8e;
+  height: 43px;
+}
+#transfer .destination-date-select #passengers {
+  border: 0;
+}
+#transfer .destination-date-select #passengers p.ttl {
+  font-size: 12px;
+  color: #474747;
+  font-weight: bold;
+  line-height: 6;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#intermediate-menu {
+  margin-top: 85px;
+}
+#intermediate-menu a {
+  -webkit-background-size: 55px 55px;
+  background-size: 55px 55px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 18px 0 18px 67px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+#intermediate-menu a.low-rates {
+  background-image: url("../img/Icons/ready/16.png");
+}
+#intermediate-menu a.combine-and-save {
+  background-image: url("../img/Icons/ready/15.png");
+}
+#intermediate-menu a.manage-online {
+  background-image: url("../img/Icons/ready/14.png");
+}
+
+#today-deals {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#today-deals h5 {
+  border-bottom: solid #B5B5B5 1px;
+  color: #2C67B3;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+#today-deals ul li {
+  display: block;
+  position: relative;
+}
+#today-deals ul li .city-ttl {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+#today-deals ul li .city-ttl p {
+  font-size: 26px;
+  line-height: .2;
+  color: #fff;
+  text-shadow: rgba(40, 40, 40, 0.75) 1px 1px 1px;
+}
+#today-deals ul li .city-ttl a {
+  display: inline-block;
+  background: #fff;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 7px;
+  color: #333;
+}
+#today-deals ul li .city-ttl a:hover {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.65) inset;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.65) inset;
+}
+#today-deals ul li.little {
+  width: 25%;
+  clear: none;
+}
+#today-deals ul li .sub {
+  margin-left: 0;
+}
+#today-deals ul li .sub li {
+  margin-bottom: 9px;
+}
+
+#car-page {
+  background: #f8f9fa;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+#car-page #flight-search-line {
+  background: #f2f1f2;
+  padding: 20px 0 10px;
+  margin-bottom: 20px;
+}
+#car-page #flight-search-line .search-line-wrapper .search-loc {
+  width: 40%;
+  float: left;
+  padding-right: 10px;
+}
+#car-page #flight-search-line .search-line-wrapper .search-loc label {
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #474747;
+}
+#car-page #flight-search-line .search-line-wrapper .search-loc label.end {
+  margin-right: 0;
+}
+#car-page #flight-search-line .search-line-wrapper .search-loc input {
+  margin-top: 10px;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer {
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer.end {
+  margin-right: 0;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer .horiz-date-wrap {
+  position: relative;
+  float: left;
+  width: 65%;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer .horiz-date-wrap #pick-date2,
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer .horiz-date-wrap #return-date2 {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer .horiz-date-wrap .calendar-icon {
+  background: url("../img/Icons/ready/71.png") left top no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer .horiz-date-wrap .date-st {
+  top: 3px;
+  left: 45px;
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  color: #89898c;
+  line-height: 1;
+  text-transform: uppercase;
+}
+#car-page #flight-search-line .search-line-wrapper .car-date-select .date-layer .time-select {
+  width: 35%;
+  float: right;
+}
+#car-page #flight-search-line .search-line-wrapper .search-car {
+  width: 10%;
+  float: right;
+  background: #377dc2;
+  border-radius: 2px;
+  margin: 26px 0 0;
+  padding: 8px 10px;
+}
+#car-page .filter {
+  padding-right: 7px;
+}
+#car-page .filter h2 {
+  padding-left: 17px;
+  font-size: 20px;
+  color: #333;
+  line-height: 2.5;
+}
+#car-page .filter .filter-block {
+  background: #fff;
+  margin-left: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid #ededed;
+}
+#car-page .filter .filter-block .ttl {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  margin-left: 12px;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+  display: block;
+}
+#car-page .filter .filter-block .ttl:before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 1px;
+  border: 4px solid transparent;
+  border-top: 6px solid #656565;
+}
+#car-page .filter .filter-block .ttl:hover {
+  cursor: pointer;
+}
+#car-page .filter .filter-block > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+#car-page .filter .filter-block li {
+  list-style-type: none;
+  display: block;
+}
+#car-page .filter .filter-block li ul {
+  margin-left: 0;
+  padding-left: 23px;
+}
+#car-page .filter .filter-block li ul li {
+  display: block;
+  margin: 10px 0;
+}
+#car-page .filter .filter-block li ul li label span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#car-page .filter .filter-block li ul li input[type='checkbox'] {
+  display: none;
+}
+#car-page .filter .filter-block li ul li input[type='checkbox'] + label {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+}
+#car-page .filter .filter-block li ul li input[type='checkbox'] + label:before {
+  width: 15px;
+  height: 15px;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -20px;
+  border: 1px solid #9c9c9b;
+  background: #f5f6f2;
+}
+#car-page .filter .filter-block li ul li input[type='checkbox']:checked + label:before {
+  width: 15px;
+  height: 15px;
+  content: '\2713';
+  color: #333;
+  font-size: 15px;
+  line-height: 14px;
+  top: -1px;
+  font-weight: bold;
+  text-align: center;
+}
+#car-page .all-cars {
+  padding-left: 8px;
+  max-height: 1200px;
+  overflow-y: auto;
+}
+#car-page .all-cars > div {
+  border: 1px solid #ededed;
+  border-top-width: 0;
+  background: #fff;
+  padding: 35px;
+}
+#car-page .all-cars > div:first-child {
+  border-top-width: 1px;
+}
+#car-page .all-cars > div .car-block {
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+#car-page .all-cars > div .car-block > img {
+  float: left;
+  width: 33%;
+  padding: 0px 20px;
+}
+#car-page .all-cars > div .car-block .desc-wrap {
+  width: 67%;
+  border-left: 1px solid #ededed;
+  background: #fafafa;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  float: right;
+}
+#car-page .all-cars > div .car-block .desc-wrap > li {
+  list-style-type: none;
+  display: block;
+  float: left;
+}
+#car-page .all-cars > div .car-block .desc-wrap > li.center img {
+  width: 22px;
+  margin: 5px;
+}
+#car-page .all-cars > div .car-block .desc-wrap > li.last {
+  margin-left: 35px;
+}
+#car-page .all-cars > div .car-block .desc-wrap li h6 {
+  font-size: 20px;
+  color: #0464b5;
+  line-height: .7;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+#car-page .all-cars > div .car-block .desc-wrap li ul {
+  margin-left: 20px;
+}
+#car-page .all-cars > div .car-block .desc-wrap li ul li {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.3;
+  width: 15%;
+}
+#car-page .all-cars > div .car-block .desc-wrap li ul li img {
+  width: 18px;
+}
+#car-page .all-cars > div .car-block .desc-wrap li ul li span {
+  font-size: 11px;
+  color: #999;
+}
+#car-page .all-cars > div .car-block .desc-wrap li .cost {
+  margin-bottom: 45px;
+  clear: both;
+  font-size: 36px;
+  line-height: 1;
+  color: #333;
+}
+#car-page .all-cars > div .car-block .desc-wrap li .cost span {
+  font-size: 14px;
+  color: #333;
+}
+#car-page .all-cars > div .car-block .desc-wrap li .cost span:last-child {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+#search-transfer-page .modify {
+  margin-bottom: 20px;
+}
+#search-transfer-page .modify .breadcrumb > *:before {
+  content: "";
+}
+#search-transfer-page .modify .breadcrumb a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d67b2;
+  display: block;
+  position: relative;
+  float: left;
+  margin-right: 30px;
+}
+#search-transfer-page .modify .breadcrumb a:after {
+  display: block;
+  position: absolute;
+  content: "";
+  background: url("../img/Icons/ready/69.png") left top no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+  right: -22px;
+  top: 2px;
+}
+#search-transfer-page .modify .breadcrumb a:last-child {
+  margin-right: 0;
+}
+#search-transfer-page .modify .breadcrumb a:last-child:after {
+  display: none;
+}
+#search-transfer-page .modify .mod-txt {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+  line-height: 1.8;
+}
+#search-transfer-page .modify .mod-txt .man {
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+#search-transfer-page .modify .mod-txt .man img {
+  width: 18px;
+}
+#search-transfer-page .modify .mod-txt .modify-search {
+  display: inline-block;
+  background: #f06828;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 6px;
+  margin-left: 15px;
+}
+#search-transfer-page .modify .mod-txt .modify-search:hover {
+  color: #fff;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
+#search-transfer-page .all-transfer {
+  border: 1px solid #ededed;
+  padding: 12px 42px;
+}
+#search-transfer-page .all-transfer .trans-block {
+  border-bottom: 1px solid #ededed;
+  padding: 30px 0;
+}
+#search-transfer-page .all-transfer .trans-block:last-child {
+  border: 0;
+}
+#search-transfer-page .all-transfer .trans-block .img-wrap {
+  border: 1px solid #ddd;
+  padding-top: 40px;
+  height: 200px;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer {
+  padding-left: 30px;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #377dc2;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer p.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer p.price span {
+  position: relative;
+  top: -13px;
+  font-size: 12px;
+  color: #acacac;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer p.price .book-link {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer .info-txt {
+  list-style-type: none;
+  margin-left: 0;
+  background: #fafafa;
+  border-color: #dbdbdb;
+  border-width: 1px 0;
+  border-style: solid;
+  -webkit-columns: 220px auto;
+  -moz-columns: 220px auto;
+  columns: 220px auto;
+  padding: 10px 0 5px;
+  margin-bottom: 0;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer .info-txt li {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  padding-left: 40px;
+  line-height: 2.5;
+  position: relative;
+}
+#search-transfer-page .all-transfer .trans-block .content-layer .info-txt li span {
+  display: block;
+  position: absolute;
+  width: 23px;
+  left: 8px;
+  top: -2px;
+}
+
+[class*="block-grid-"] {
+  margin: 0 -0.325rem;
+}
+
+[class*="block-grid-"] > li {
+  display: block;
+  float: left;
+  height: auto;
+  padding: 0 5px 10px;
+}
+
+#top-deals {
+  margin-top: 80px;
+}
+#top-deals h5 {
+  color: #2C67B3;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 26px;
+  border-bottom: 1px solid #b5b5b5;
+  margin-bottom: 30px;
+}
+#top-deals ul {
+  margin-left: 0;
+}
+#top-deals ul > li {
+  list-style-type: none;
+  float: left;
+  padding-right: 1%;
+  padding-left: 1%;
+  display: block;
+  width: 25%;
+  margin: 10px 0;
+}
+#top-deals ul > li img {
+  margin-bottom: 15px;
+}
+#top-deals ul > li h6 {
+  font-size: 20px;
+  color: #666;
+  line-height: .7;
+  margin-bottom: 5px;
+  padding-left: 30px;
+}
+#top-deals ul > li h6 span {
+  font-size: 12px;
+  color: #999;
+}
+#top-deals ul > li ul {
+  margin-left: 0;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  clear: both;
+}
+#top-deals ul > li ul li {
+  display: inline-block;
+  text-align: center;
+  line-height: .1;
+  width: 15%;
+}
+#top-deals ul > li ul li img {
+  width: 18px;
+}
+#top-deals ul > li ul li span {
+  font-size: 11px;
+  color: #999;
+}
+#top-deals ul > li .cost {
+  margin-top: 5px;
+  padding-left: 30px;
+  clear: both;
+  font-size: 18px;
+  color: #f06828;
+}
+#top-deals ul > li .cost span {
+  font-size: 11px;
+  color: #999;
+}
